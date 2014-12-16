@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Language</th>
+      <th># Issues</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="repo in repos">
+      <td><a href="{{ repo.html_url }}">{{ repo.name }}</a></td>
+      <td>{{ repo.language }}</td>
+      <td>{{ repo.open_issues_count | number }}</td>
+    </tr>
+  </tbody>
+</table>
